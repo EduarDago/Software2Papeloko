@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 17-mar-2017 18:55:04 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="Modelo.ClasesFramework.Proveedores" table="proveedores" catalog="softwarepapeleria" optimistic-lock="version">
+        <id name="nit" type="string">
+            <column name="nit" length="15" />
+            <generator class="assigned" />
+        </id>
+        <property name="nombre" type="string">
+            <column name="nombre" length="40" />
+        </property>
+        <property name="telefono" type="java.lang.Integer">
+            <column name="telefono" />
+        </property>
+        <property name="direccion" type="string">
+            <column name="direccion" length="40" />
+        </property>
+    </class>
+</hibernate-mapping>
